@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Big Apple Swimming Pool</title>
+</head>
+
+<body>
+
+
+
+<script type="text/javascript">
+
+var selected = 0
+
+function test()
+{
+	console.log(selected);
+}
+
+function Click()
+{
+
+	if(selected==1)
+	{
+		document.getElementById('pool1').style.zIndex = '1';
+		document.getElementById('pool2').style.zIndex = '4';
+		document.getElementById('pool3').style.zIndex = '3';
+		document.getElementById('pool4').style.zIndex = '2';
+		document.getElementById('pool1').style.opacity = '0';
+		document.getElementById('pool2').style.opacity = '1';
+		document.getElementById('pool3').style.opacity = '0';
+		document.getElementById('pool4').style.opacity = '0';
+	}
+
+	if(selected==2)
+	{
+		document.getElementById('pool1').style.zIndex = '2';
+		document.getElementById('pool2').style.zIndex = '1';
+		document.getElementById('pool3').style.zIndex = '4';
+		document.getElementById('pool4').style.zIndex = '3';
+		document.getElementById('pool1').style.opacity = '0';
+		document.getElementById('pool2').style.opacity = '0';
+		document.getElementById('pool3').style.opacity = '1';
+		document.getElementById('pool4').style.opacity = '0';
+	}
+
+	if(selected==3)
+	{
+		document.getElementById('pool1').style.zIndex = '3';
+		document.getElementById('pool2').style.zIndex = '2';
+		document.getElementById('pool3').style.zIndex = '1';
+		document.getElementById('pool4').style.zIndex = '4';
+		document.getElementById('pool1').style.opacity = '0';
+		document.getElementById('pool2').style.opacity = '0';
+		document.getElementById('pool3').style.opacity = '0';
+		document.getElementById('pool4').style.opacity = '1';	
+	}
+
+	if(selected==0)
+	{
+		document.getElementById('pool1').style.zIndex = '4';
+		document.getElementById('pool2').style.zIndex = '3';
+		document.getElementById('pool3').style.zIndex = '2';
+		document.getElementById('pool4').style.zIndex = '1';
+		document.getElementById('pool1').style.opacity = '1';
+		document.getElementById('pool2').style.opacity = '0';
+		document.getElementById('pool3').style.opacity = '0';
+		document.getElementById('pool4').style.opacity = '0';
+	}
+}
+
+
+
+</script>
+
+
+
+
+
+<style>
+
+#icon
+{
+	position: absolute;
+	transform: scale(0.2);
+	left: -8%;
+	top: -19%;
+}
+
+#icontext
+{
+	font-size: 38px;
+	position: absolute;
+	left: 10%;
+	top: 4%;
+}
+
+#icontext2
+{
+	font-size: 18px;
+	position: absolute;
+	left: 10.25%;
+	top: 10%;
+	color: #757575;
+}
+
+#iconbox
+{
+	position: absolute;
+	left: 2%;
+	top: 2.5%;
+	width: 25%;
+	height: 12%;
+	background-color: white;
+	z-index: -1;
+	-webkit-transition: all 500ms ease;
+}
+
+#contact
+{
+	font-size: 38px;
+	position: absolute;
+	top: 5.5%;
+	left: 65%;
+}
+
+#sep1
+{
+	left: -7%;
+	top: 17.2%;
+	height: 10.7%;
+	width: 18%;
+	background-color: #bb88ed;
+	position: absolute;
+	z-index: -1;
+}
+
+#sep2
+{
+	left: 89.25%;
+	top: 17.2%;
+	height: 10.7%;
+	width: 11%;
+	background-color: #bb88ed;
+	position: absolute;
+	z-index: -1;
+}
+
+
+#aboutus
+{
+	position:absolute;
+	top: 17.2%;
+	left: 10%;
+}
+
+#equipment
+{
+	position: absolute;
+	top: 17.2%;
+	left: 29.75%;
+}
+
+#timetable
+{
+	position: absolute;
+	top: 16.8%;
+	left: 52.5%;
+}
+
+#recruitment
+{
+	position: absolute;
+	top: 17.2%;
+	left: 69.75%;
+}
+
+#call
+{
+	position: absolute;
+	top: -5%;
+	left: 54%;
+	transform: scale(0.25);
+}
+
+#but1
+{
+	position: absolute;
+	top: 17.2%;
+	left: 10.125%;
+	height: 10.7%;
+	width: 19.3%;
+	background-color: #bb88ed;
+	z-index: -1;
+	-webkit-transition: all 300ms ease;
+}
+
+#but2
+{
+	position: absolute;
+	top: 17.2%;
+	left: 29.5%;
+	height: 10.7%;
+	width: 19.7%;
+	background-color: #bb88ed;
+	z-index: -1;
+	-webkit-transition: all 300ms ease;
+}
+
+#but3
+{
+	position: absolute;
+	top: 17.2%;
+	left: 49.3%;
+	height: 10.7%;
+	width: 21%;
+	background-color: #bb88ed;
+	z-index: -1;
+	-webkit-transition: all 300ms ease;
+}
+
+#but4
+{
+	position: absolute;
+	top: 17.2%;
+	left: 70.3%;
+	height: 10.7%;
+	width: 19%;
+	background-color: #bb88ed;
+	z-index: -1;
+	-webkit-transition: all 300ms ease;
+}
+
+#leftarrow
+{
+	position: absolute;
+	transform: scale(0.15);
+	left: -10.5%;
+	top: 30%;
+}
+
+#rightarrow
+{
+	position: absolute;
+	transform: scale(0.15) rotate(180deg);
+	left: 53.5%;
+	top: 30%;
+}
+
+#pool1
+{
+	position: absolute;
+	transform: scale(0.5);
+	top: 15%;
+	left: 3%;
+	z-index: 4;
+	opacity: 1;
+	-webkit-transition: all 500ms ease;
+}
+
+#pool2
+{
+	position: absolute;
+	transform: scale(0.5);
+	top: 15%;
+	left: 3%;
+	z-index: 3;
+	opacity: 0;
+	-webkit-transition: all 500ms ease;
+}
+
+#pool3
+{
+	position: absolute;
+	transform: scale(0.5);
+	top: 15%;
+	left: 3%;
+	z-index: 2;
+	opacity: 0;
+	-webkit-transition: all 500ms ease;
+}
+
+#pool4
+{
+	position: absolute;
+	transform: scale(0.5);
+	top: 15%;
+	left: 3%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 500ms ease;
+}
+
+
+#pooltimetable
+{
+	position: absolute;
+	top: 108%;
+	left: 22.5%;
+	transform: scale(1.25);
+}
+
+#timetabletitle
+{
+	position: absolute;
+	top: 96%;
+	left: 31%;
+	font-size: 40px;
+}
+
+#randomstuff
+{
+	position: absolute;
+	top: 235%;
+	width: 10%;
+	height: 10%;
+	background-color: transparent;
+	z-index: -2;
+}
+
+#service
+{
+	position: absolute;
+	font-size: 40px;
+	top: 151%;
+	left: 43.5%;
+}
+
+#explain
+{
+	position: absolute;
+	top: 137%;
+	left: -36%;
+	transform: scale(0.5);
+
+}
+
+
+#bottom
+{
+	position: absolute;
+	width: 120%;
+	height: 25%;
+	background-color: #bb88ed;
+	top: 230%;
+	left: -20%;
+}
+
+#bottompic
+{
+	position: absolute;
+	top: 231%;
+	left: 30%;
+	transform: scale(0.9);
+}
+
+#homebutton
+{
+	position: absolute;
+	left: 2%;
+	top: 2.5%;
+	width: 25%;
+	height: 12%;
+	background-color: transparent;
+	z-index: 3;
+}
+
+
+</style>
+
+<a href="index.html"><div id=homebutton onmouseover="document.getElementById('iconbox').style.backgroundColor='#d5d5d5';" 
+onmouseout="document.getElementById('iconbox').style.backgroundColor='white';"></div></a>
+
+<img id=icon src=Image/apple.png
+onmouseover="document.getElementById('iconbox').style.backgroundColor='#d5d5d5';" 
+onmouseout="document.getElementById('iconbox').style.backgroundColor='white';"></img>
+
+<b><div id=icontext
+	onmouseover="document.getElementById('iconbox').style.backgroundColor='#d5d5d5';" 
+	onmouseout="document.getElementById('iconbox').style.backgroundColor='white';">大蘋果游泳池</div><b>
+<div id=icontext2
+onmouseover="document.getElementById('iconbox').style.backgroundColor='#d5d5d5';" 
+onmouseout="document.getElementById('iconbox').style.backgroundColor='white';">
+Big Apple Swimming Pool</div>
+
+<b><div id=contact>聯絡我們：0629-382-664</div><b>
+
+<div id=iconbox></div>
+
+<div id=sep1></div> <div id=sep2></div>
+
+<a href="actual_website_1.html"><img id=aboutus 
+onmouseover="document.getElementById('but1').style.backgroundColor='#8b63b1';" 
+onmouseout="document.getElementById('but1').style.backgroundColor='#bb88ed';"
+src=Image/aboutus.png></img></a>
+
+<div id=but1></div>
+
+<a href="actual_website_2.html"><img id=equipment
+onmouseover="document.getElementById('but2').style.backgroundColor='#8b63b1';" 
+onmouseout="document.getElementById('but2').style.backgroundColor='#bb88ed';" 
+src=Image/equipment.png></img></a>
+	<div id=but2></div>
+
+<a href="actual_website_3.html"><img id=timetable
+onmouseover="document.getElementById('but3').style.backgroundColor='#8b63b1';" 
+onmouseout="document.getElementById('but3').style.backgroundColor='#bb88ed';"
+src=Image/timetable.png></img></a>
+	<div id=but3></div>
+
+<a href="actual_website_4.html"><img id=recruitment
+onmouseover="document.getElementById('but4').style.backgroundColor='#8b63b1';" 
+onmouseout="document.getElementById('but4').style.backgroundColor='#bb88ed';" 
+src=Image/recruitment.png></img></a>
+	<div id=but4></div>
+
+<img id=call src=Image/call.png></img>
+
+
+
+<img id=leftarrow src=Image/arrow.png onclick="test(); selected-=1; if(selected==-1){selected=3}; Click()"></img>
+
+<img id=rightarrow src=Image/arrow.png onclick="test(); selected+=1; if(selected==4){selected=0}; Click()"></img>
+
+<img id=pool1 src=Image/pool1.jpeg></img>
+
+<img id=pool2 src=Image/pool2.jpeg></img>
+
+<img id=pool3 src=Image/pool3.jpeg></img>
+
+<img id=pool4 src=Image/pool4.jpeg></img>
+
+<img id=pooltimetable src=Image/pooltimetable.png></img>
+
+<b><div id=timetabletitle>泳池營業時間表 - 2023 夏季</div></b>
+
+<div id=randomstuff></div>
+
+<b><div id=service>服務選擇</div></b>
+
+<img id = explain src="Image/explain.png"></img>
+
+<div id = bottom></div>
+
+<img id = bottompic src="Image/bottompic.png"></img>
+
+</body>
+
+</html>
